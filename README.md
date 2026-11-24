@@ -1,28 +1,60 @@
 # 🚀 Claude Code Essentials
 
-A curated collection of battle-tested `CLAUDE.md` templates, custom slash commands, and domain-specific skills to supercharge your workflow with [Claude Code](https://anthropic.com).
+[![License: MIT](https://shields.io)](https://opensource.org)
+[![PRs Welcome](https://shields.io)](http://makeapullrequest.com)
+[![Claude Code](https://shields.io)](https://anthropic.com)
 
-## 📦 What's Inside
+A curated, production-ready collection of **`CLAUDE.md` templates**, **custom slash commands**, and **Agent Skills** to eliminate hallucinations and supercharge your [Claude Code](https://anthropic.com) workflow.
 
-- **`/templates`**: Ready-to-use `CLAUDE.md` memory files to prevent hallucinations and enforce code standards.
-- **`/commands`**: Custom slash commands (`/smart-commit`, `/security-audit`, `/fix-tests`) to automate daily Git and QA workflows.
-- **`/skills`** *(Coming Soon)*: Deep architectural skills for modern frameworks.
+## ⚡ 1-Line Quick Install (Commands + Skills)
 
-## ⚡ Quick Start
-
-### 1. Using `CLAUDE.md` Templates
-Copy any template from `/templates` into a `CLAUDE.md` file at the root of your project.
-
-### 2. Installing Slash Commands
-Create a `.claude/commands` folder in your project and copy the `.md` files from `/commands`:
+Run this command inside the root folder of any project to install all slash commands and skills into `.claude/`:
 
 ```bash
-mkdir -p .claude/commands
-# Copy your desired commands into .claude/commands/
+curl -fsSL https://githubusercontent.com | bash
 ```
 
-Once inside Claude Code, simply type `/` to see and trigger your new commands (e.g., `/smart-commit`).
+---
+
+## 📦 What's Included
+
+### 1. Memory Templates (`/templates`)
+Copy any template into a `CLAUDE.md` file at the root of your project to give Claude instant architectural awareness:
+- **`general-saas.md`** — Universal rules for clean diffs, planning before coding, and strict verification.
+- **`nextjs-typescript.md`** — Enforces App Router, React Server Components, and strict TypeScript (no `any`).
+- **`python-fastapi.md`** — Enforces `Router -> Service -> Repository` architecture, async I/O, and Pydantic v2.
+
+### 2. Custom Slash Commands (`/commands`)
+Type `/` inside Claude Code to trigger these workflows:
+
+| Command | Description |
+| :--- | :--- |
+| `/smart-commit` | Audits staged changes for debug logs/secrets and creates a clean Conventional Commit. |
+| `/security-audit` | Acts as an AppSec Engineer to catch SQLi, XSS, auth flaws, and exposed credentials. |
+| `/fix-tests` | Runs your test suite and iteratively fixes failures until all tests pass. |
+
+### 3. Agent Skills (`/skills`)
+Automatically activated by Claude Code based on your task context:
+- **`api-design`** — Enforces input validation, pagination, proper HTTP status codes, and N+1 prevention.
+- **`refactoring-pro`** — Guides safe, incremental code cleanup while preserving existing behavior.
+
+---
+
+## 🛠️ Manual Installation
+
+If you prefer to pick only specific files instead of running the installer script:
+
+1. **Templates:** Copy the desired `.md` file from `/templates` and rename it to `CLAUDE.md` in your project root.
+2. **Commands:** Copy `.md` files from `/commands` into `.claude/commands/`.
+3. **Skills:** Copy skill folders from `/skills` into `.claude/skills/`.
+
+---
 
 ## 🤝 Contributing
 
-Found a prompt pattern that saves tokens or improves accuracy? Open a Pull Request!
+Have a `CLAUDE.md` rule, slash command, or skill that saves tokens or improves code quality?
+1. Fork this repository
+2. Add your `.md` file to the appropriate folder
+3. Open a Pull Request!
+
+If this repository helped your workflow, please consider giving it a ⭐!
