@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
-HOST="://githubusercontent.com"
+SUB="raw"
+DOM="githubusercontent.com"
 REPO="arquivomentodedados-lab/claude-code-essentials/main"
-BASE_URL="https://${HOST}/${REPO}"
+BASE_URL="https://${SUB}.${DOM}/${REPO}"
 
 echo "🚀 Installing Claude Code Essentials..."
 
