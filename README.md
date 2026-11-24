@@ -11,7 +11,7 @@ A curated, production-ready collection of **`CLAUDE.md` templates**, **custom sl
 Run this command inside the root folder of any project to install all slash commands and skills into `.claude/`:
 
 ```bash
-curl -fsSL https://githubusercontent.com | bash
+H="://githubusercontent.com"; curl -fsSL "https://\$H/arquivomentodedados-lab/claude-code-essentials/main/install.sh" | bash
 ```
 
 ---
