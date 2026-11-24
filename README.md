@@ -1,8 +1,16 @@
 # 🚀 Claude Code Essentials
 
-[![License: MIT](https://shields.io)](https://opensource.org)
-[![PRs Welcome](https://shields.io)](http://makeapullrequest.com)
-[![Claude Code](https://shields.io)](https://anthropic.com)
+<p align="left">
+  <a href="https://opensource.org">
+    <img src="https://img.shields.io&#47;badge&#47;License-MIT-yellow.svg" alt="License: MIT">
+  </a>
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io&#47;badge&#47;PRs-welcome-brightgreen.svg" alt="PRs Welcome">
+  </a>
+  <a href="https://anthropic.com">
+    <img src="https://img.shields.io&#47;badge&#47;Built%20for-Claude%20Code-blueviolet" alt="Claude Code">
+  </a>
+</p>
 
 A curated, production-ready collection of **`CLAUDE.md` templates**, **custom slash commands**, and **Agent Skills** to eliminate hallucinations and supercharge your [Claude Code](https://anthropic.com) workflow.
 
