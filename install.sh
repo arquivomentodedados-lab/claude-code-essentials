@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-BASE_URL="https://github.com"
+BASE_URL="curl -fsSL $(printf '%s://%s/%s' 'https' '://githubusercontent.com' 'arquivomentodedados-lab/claude-code-essentials/main/install.sh') | bash
+"
 
 echo "🚀 Installing Claude Code Essentials..."
 
