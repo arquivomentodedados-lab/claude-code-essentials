@@ -12,57 +12,57 @@
   </a>
 </p>
 
-A curated, production-ready collection of **`CLAUDE.md` templates**, **custom slash commands**, and **Agent Skills** to eliminate hallucinations and supercharge your [Claude Code](https://anthropic.com) workflow.
 
-## ⚡ 1-Line Quick Install (Commands + Skills)
+Uma coleção curada e pronta para produção de **templates `CLAUDE.md`**, **comandos slash personalizados** e **Habilidades de Agente (*Agent Skills*)** para otimizar fluxos de trabalho no [Claude Code](https://anthropic.com).
 
-Run this command inside the root folder of any project to install all slash commands and skills into `.claude/`:
+---
 
+## ⚡ Instalação Rápida (1 Linha)
+
+Execute o comando correspondente ao seu sistema operacional na pasta raiz do seu projeto para baixar e instalar os comandos slash e habilidades:
+
+**macOS / Linux / Git Bash:**
 ```bash
-curl -fsSL $(printf '%s://%s.%s/%s' 'https' 'raw' 'githubusercontent.com' 'arquivomentodedados-lab/claude-code-essentials/main/install.sh') | bash
+curl -fsSL \$(printf '%s://%s.%s/%s' 'https' 'raw' 'githubusercontent.com' 'arquivomentodedados-lab/claude-code-essentials/main/install.sh') | bash
 ```
 
----
+**Windows (PowerShell via Git Bash):**
+```powershell
+& "C:\Program Files\Git\bin\bash.exe" -c "curl -fsSL \$(printf '%s://%s.%s/%s' 'https' 'raw' 'githubusercontent.com' 'arquivomentodedados-lab/claude-code-essentials/main/install.sh') | bash"
+```
 
-## 📦 What's Included
-
-### 1. Memory Templates (`/templates`)
-Copy any template into a `CLAUDE.md` file at the root of your project to give Claude instant architectural awareness:
-- **`general-saas.md`** — Universal rules for clean diffs, planning before coding, and strict verification.
-- **`nextjs-typescript.md`** — Enforces App Router, React Server Components, and strict TypeScript (no `any`).
-- **`python-fastapi.md`** — Enforces `Router -> Service -> Repository` architecture, async I/O, and Pydantic v2.
-
-### 2. Custom Slash Commands (`/commands`)
-Type `/` inside Claude Code to trigger these workflows:
-
-| Command | Description |
-| :--- | :--- |
-| `/smart-commit` | Audits staged changes for debug logs/secrets and creates a clean Conventional Commit. |
-| `/security-audit` | Acts as an AppSec Engineer to catch SQLi, XSS, auth flaws, and exposed credentials. |
-| `/fix-tests` | Runs your test suite and iteratively fixes failures until all tests pass. |
-
-### 3. Agent Skills (`/skills`)
-Automatically activated by Claude Code based on your task context:
-- **`api-design`** — Enforces input validation, pagination, proper HTTP status codes, and N+1 prevention.
-- **`refactoring-pro`** — Guides safe, incremental code cleanup while preserving existing behavior.
+> **Nota:** Os templates de memória (`/templates`) devem ser copiados manualmente para a raiz do seu projeto como `CLAUDE.md`.
 
 ---
 
-## 🛠️ Manual Installation
+## 📦 O Que Está Incluído
 
-If you prefer to pick only specific files instead of running the installer script:
+### 1. Templates de Memória (`/templates`)
+Fornecem contexto arquitetural imediato ao Claude. Escolha o template adequado para sua pilha tecnológica e salve-o como `CLAUDE.md` na raiz do projeto:
 
-1. **Templates:** Copy the desired `.md` file from `/templates` and rename it to `CLAUDE.md` in your project root.
-2. **Commands:** Copy `.md` files from `/commands` into `.claude/commands/`.
-3. **Skills:** Copy skill folders from `/skills` into `.claude/skills/`.
+* **`general-saas.md`** — Regras universais para diffs limpos, planejamento prévio e verificação rigorosa.
+* **`nextjs-typescript.md`** — Focado em App Router, React Server Components e TypeScript rigoroso.
+* **`python-fastapi.md`** — Define arquitetura Router -> Service -> Repository, I/O assíncrono e Pydantic v2.
+
+### 2. Comandos Slash Personalizados (`/commands`)
+Digite `/` no Claude Code para acionar fluxos como `/smart-commit` (audita alterações e gera commits limpos), `/security-audit` (atua como engenheiro de segurança verificando vulnerabilidades) e `/fix-tests` (executa e repara falhas nos testes iterativamente).
+
+### 3. Habilidades de Agente (`/skills`)
+Ativadas automaticamente pelo Claude Code com base no contexto da tarefa, incluindo **`api-design`** (validação de entrada, paginação e status HTTP) e **`refactoring-pro`** (limpeza de código incremental e segura).
 
 ---
 
-## 🤝 Contributing
+## 🛠️ Instalação Manual
 
-Have a `CLAUDE.md` rule, slash command, or skill that saves tokens or improves code quality?
-1. Fork this repository
-2. Add your `.md` file to the appropriate folder
-3. Open a Pull Request!
+Para instalar arquivos específicos sem o script automático:
 
-If this repository helped your workflow, please consider giving it a ⭐!
+* **Templates:** Copie o arquivo `.md` desejado de `/templates` para a raiz do projeto e renomeie para `CLAUDE.md`.
+* **Comandos:** Copie os arquivos `.md` de `/commands` para `.claude/commands/`.
+* **Habilidades:** Copie as pastas de habilidades de `/skills` para `.claude/skills/`.
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições com novas regras, comandos ou habilidades são bem-vindas. Faça um fork do repositório, adicione seu arquivo na pasta correspondente e abra um Pull Request. Se o projeto te ajudou, considere deixar uma ⭐!
+
